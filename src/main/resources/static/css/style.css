@@ -3,12 +3,12 @@
 body {
 	font-family: BIZ UDPゴシック;
 	background-color: #98fb98;
-	text-align: center;;
+	text-align: center;
 }
 
 h1 {
 	font-size: 32px;
-	color: green;;
+    color: green;
 }
 
 h2 {
@@ -16,7 +16,7 @@ h2 {
 	background-color: green;
 	color: white;
 	padding-top: 6px;
-	padding-bottom: 6px;;
+	padding-bottom: 6px;
 }
 
 /* 通常のボタン */
@@ -25,12 +25,12 @@ h2 {
 	padding: 4px 20px;
 	font-size: 20px;
 	color: green;
-	cursor: pointer;
+	cursor:pointer;
 }
 
 .btn:hover {
-	color: #fff;
-	background: green;
+  color: #fff;
+  background: green;
 }
 
 /* コメント入力の幅 */
@@ -39,7 +39,7 @@ input.comment {
 }
 
 .error-msg {
-	color: red;
+    color: red;
 }
 
 table {
@@ -67,3 +67,30 @@ td {
     background-color: #eee8aa;
 }
 
+/* テーブル内ボタン */
+.tbtn {
+	border: 2px solid steelblue;
+	padding: 2px 10px;
+	font-size: 16px;
+	color: steelblue;
+	cursor:pointer;
+}
+
+.tbtn:hover {
+  color: #fff;
+  background: steelblue;
+}
+
+/* 確認画面用 */
+.confirm-table {
+    background-color: #e5d8e8;
+	width: 50%; 					/* テーブル横幅 */
+}
+
+.confirm-table .guide {
+	width: 30%; 					/* ガイド横幅 */
+}
+
+.confirm-table td {
+    text-align:left;
+}
