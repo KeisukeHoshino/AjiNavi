@@ -9,4 +9,6 @@ public interface ReviewRepository {
 	void add(Review review);
 	
 	List<Review> selectByRestaurantId(int restaurantId);
+	
+	void update(Review review);
 }

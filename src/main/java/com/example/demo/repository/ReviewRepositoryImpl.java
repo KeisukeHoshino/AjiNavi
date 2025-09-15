@@ -69,7 +69,28 @@ public class ReviewRepositoryImpl implements ReviewRepository {
 		}
 		return result;
 	}
-	
-	
+
+	@Override
+	public void update(Review review) {
+		
+		String sql = 
+				"UPDATE  "
+				+ "t_review "
+				+ "SET "
+				+ "user_id = ? ,"
+				+ "visit_date = ? ,"
+				+ "rating = ? ,"
+				+ "comment = ? "
+				+ "WHERE "
+				+ "review_id = ?"; 
+		
+		jdbcTemplate.update(sql,
+							review.getUserId(),
+							review.getVisitDate(),
+							review.getRating(),
+							review.getComment(),
+							review.getReviewId());
+		
+	}
 
 }
